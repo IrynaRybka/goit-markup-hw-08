@@ -1,0 +1,39 @@
+/* список контакты и email */
+.list {
+    &__email,
+    &__tel {
+        color:var(--txt-gray-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+
+        transition-property:color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    &__icon-email {
+        fill: currentColor;
+        margin-right: 10px;
+    }
+
+    &__icon-smartphone {
+        fill: currentColor;
+        margin-right: 10px;
+    }
+
+    &__email:hover, 
+    &__tel:hover {
+        color: var(--base-blue-color);    
+    }
+    &__email:focus, 
+    &__tel:focus {
+        color:var(--base-blue-color);
+    }
+}
+.link.list__email,
+.link.list__tel {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+/* section filter in site-top__portfolio*/
+.filter {
+    &__list {
+        margin-bottom: 50px;
+
+        display: flex;
+        justify-content: center;
+    }
+    &__list &__element + &__element {
+        margin-left: 8px;
+    }
+}

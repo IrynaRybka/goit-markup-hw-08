@@ -1,0 +1,61 @@
+/* футер */
+.site-bottom {
+    background-color: var(--bk-cl-darkgray);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    &__element {
+        margin-bottom: 9px;
+    }
+
+    &__element:last-child {
+        margin-bottom: 0;
+    }
+
+    &__adress {
+        text-decoration: none;
+        line-height: 1.71;
+        color: var(--hover-txt-btn);
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__adress:hover,
+    &__adress:focus {
+        color: var(--base-blue-color);
+
+    }
+
+    &__email,
+    &__tel {
+        text-decoration: none;
+        color: var(--txt-gray-color);
+        line-height: 1.71;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__email:hover,
+    &__tel:hover,
+    &__email:focus,
+    &__tel:focus {
+        color: var(--base-blue-color);
+    }
+
+    &__container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__social {
+        margin-left: 70px;
+    }
+    &__form {
+        margin-left: 93px;
+    }
+}

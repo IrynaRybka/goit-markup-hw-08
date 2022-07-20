@@ -1,0 +1,61 @@
+// червертий паршал
+.site-top {
+    &__list,
+    &__connection,
+    &__nav,
+    &__container {
+        display: flex;
+    }
+    &__list {
+        margin-left: 93px;
+    }
+    &__nav,
+    &__container {
+        align-items:center;
+    }
+    &__connection {
+        margin-left: auto;
+    }
+
+    &__list .list__menu:not(:last-child) {
+        margin-right: 50px;
+    }
+    &__connection .list__menu + .list__menu {
+        margin-left: 50px;
+    }
+    &__portfolio,
+    &__studio, 
+    &__contacts,
+    &__email,
+    &__tel  {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    &__studio, 
+    &__portfolio, 
+    &__contacts {
+        font-weight: 500;
+        color: var(--txt-darkgray-color);
+        font-size: 14px;
+        line-height: 1.14;
+
+        transition-property:color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+           
+    &__studio:hover, 
+    &__portfolio:hover, 
+    &__contacts:hover,
+    &__studio:focus, 
+    &__portfolio:focus, 
+    &__contacts:focus {
+        color: var(--base-blue-color); 
+    }
+    
+    &__element {
+        position: relative;
+    }
+}

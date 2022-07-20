@@ -1,0 +1,15 @@
+@mixin current {
+    color: var(--base-blue-color);
+    
+        &::after {
+            position: absolute;
+            bottom: -1px;
+            content: "";
+            width: 100%;
+            height: 4px;
+            display: block;
+    
+            background-color: var(--base-blue-color);
+            border-radius: 2px;
+        }
+}

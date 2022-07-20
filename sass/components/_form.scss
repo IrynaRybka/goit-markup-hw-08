@@ -1,0 +1,164 @@
+/* форма подписки в футере */
+.form {
+    &__site-bottom {
+        display: flex;
+    }
+
+    &__tageline {
+        margin-bottom: 20px;
+    }
+
+    &__input-email {
+        display: inline-block;
+
+        width: 358px;
+        height: 50px;
+        padding: 15px 16px;
+
+        outline: 1px solid rgba(255, 255, 255, 0.3);
+        border: none;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--bk-cl-darkgray);
+        color: var(--hover-txt-btn);
+        font-size: 16px;
+        letter-spacing: 0.03em;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        margin-left: 12px;
+        width: 200px;
+        max-height: 50px;
+        padding-left: 29px;
+        padding-right: 28px;
+        cursor: pointer;
+
+        background-color: var(--base-blue-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        color: var(--hover-txt-btn);
+        letter-spacing: 0.06em;
+        font-weight: 700;
+    }
+
+    &__icon-send {
+        margin-left: 10px;
+        fill: var(--hover-txt-btn);
+
+    }
+
+    /* конец фoрмы подписки в футере */
+
+    /* форма в модалке */
+
+    &__label {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        margin-bottom: 4px;
+    }
+
+    &__input {
+
+        width: 448px;
+        height: 40px;
+        outline: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        border: none;
+        padding: 12px 10px 12px 42px;
+
+        transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    &__input:focus-within,
+    &__input:hover {
+        outline-color: var(--base-blue-color);
+    }
+
+    &__input:focus-within ~ &__icon,
+    &__input:hover ~ &__icon {
+        fill: var(--base-blue-color);
+
+    }
+
+    &__message {
+
+        padding: 12px 16px;
+        resize: none;
+        width: 448px;
+        height: 120px;
+        outline: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        border: none;
+
+        transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__message:focus-within,
+    &__message:hover {
+        outline-color: var(--base-blue-color);
+    }
+
+    &__field {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin-bottom: 10px;
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__field .modal__message {
+        margin-bottom: 20px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 30px;
+        left: 24px;
+        transform: translate(-50%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    &__agreement-document {
+        color: var(--base-blue-color);
+    }
+
+    &__checkbox {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 30px;
+
+    }
+
+    &__icon-custom {
+        display: inline-flex;
+        text-align: center;
+        justify-content: center;
+        margin-right: 8px;
+        outline: 2px var(--bk-cl-darkgray) solid;
+        outline-offset: -2px;
+        border-radius: 2px;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1), outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    &__icon-checked {
+        fill: var(--hover-txt-btn);
+    }
+
+    &__checkbox-input:checked + &__icon-custom {
+        background-color: var(--base-blue-color);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        outline-color: var(--base-blue-color);
+    }
+}
