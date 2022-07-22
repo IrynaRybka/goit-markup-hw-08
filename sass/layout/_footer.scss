@@ -1,17 +1,26 @@
 /* футер */
 .site-bottom {
     background-color: var(--bk-cl-darkgray);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    text-align: center;
 
+    & .list {
+        justify-content: center
+    }
+      
 
     &__element {
-        margin-bottom: 9px;
+        margin-bottom: 8px;
     }
 
     &__element:last-child {
         margin-bottom: 0;
     }
+
+    &__nav,
+    &__social {
+        margin-bottom: 60px;
+    }
+    
 
     &__adress {
         text-decoration: none;
@@ -46,16 +55,32 @@
     &__tel:focus {
         color: var(--base-blue-color);
     }
-
-    &__container {
-        display: flex;
-        align-items: baseline;
+    @media screen and (min-width: 768px) {
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+       
+        .form__site-bottom {
+            flex-wrap: nowrap;
+        }
+        .form__input-email {
+            margin-left: 12px;
+        }
     }
 
-    &__social {
-        margin-left: 70px;
-    }
-    &__form {
-        margin-left: 93px;
-    }
+    // &__container {
+    //     display: flex;
+    //     align-items: baseline;
+    // }
+
+    // &__social {
+    //     margin-left: 70px;
+    // }
+    // &__form {
+    //     margin-left: 93px;
+    // }
 }

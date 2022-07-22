@@ -1,25 +1,12 @@
 /*start section peculiarities */
 .peculiarities {
-
-    &__list {
-        display: flex;
-    }
-
-    &__list &__ideas + &__ideas {
-        margin-left: 30px;
-    }
-
-    &__ideas {
-        min-width: 270px;
-    }
-
+    // убрать боковые маржины у крайних элементов
     &__icon {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
         background-color: var(--icon-fon);
-        /* width: 270px; */
         height: 120px;
     }
 
@@ -34,10 +21,55 @@
     }
 
     &__detailing {
-        font-size: 14px;
         line-height: 1.71;
-        letter-spacing: 0.03em;
         margin: 0;
+    }   
+    @media screen and (min-width: 768px) {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 30px;
+            justify-content: space-between;
+            }
+        &__ideas {
+            width: 354px;
+            
+        }
+    } 
+    @media screen and (max-width: 767px) {
+        &__ideas:not(:last-child) {
+            margin-bottom: 30px;
+            } 
+        }
+    @media screen and (min-width: 1200px) {
+        &__ideas {
+                width: 277px; 
+            }
+       
+        &__list {
+            flex-wrap: nowrap;
+          
+        }
+        }
+        
     }
-}
-/* end section peculiarities */
+    
+       
+       
+    
+    // &__list {
+    //     display: flex;
+    // }
+
+    // &__list &__ideas + &__ideas {
+    //     margin-left: 30px;
+    // }
+
+    // &__ideas {
+    //     min-width: 270px;
+    // }
+
+    
+
+//end section peculiarities 

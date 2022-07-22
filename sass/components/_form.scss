@@ -1,7 +1,10 @@
 /* форма подписки в футере */
 .form {
     &__site-bottom {
+
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__tageline {
@@ -11,7 +14,8 @@
     &__input-email {
         display: inline-block;
 
-        width: 358px;
+        width: 100%;
+        margin-bottom: 20px;
         height: 50px;
         padding: 15px 16px;
 
@@ -30,9 +34,9 @@
         align-items: center;
         text-align: center;
 
-        margin-left: 12px;
+        // margin-left: 12px;
         width: 200px;
-        max-height: 50px;
+        height: 50px;
         padding-left: 29px;
         padding-right: 28px;
         cursor: pointer;
@@ -50,7 +54,19 @@
         fill: var(--hover-txt-btn);
 
     }
-
+        @media screen and (min-width: 1200px) {
+    
+            &__site-bottom {
+                flex-wrap: nowrap;
+            }
+    
+            &__input-email {
+                margin-right: 12px;
+            }
+            &__input-email {
+                width: 358px;
+        }
+    }
     /* конец фoрмы подписки в футере */
 
     /* форма в модалке */
