@@ -10,6 +10,8 @@
         margin-bottom: 50px;
     }
       &__link {
+        padding-top: 16px;
+        padding-bottom: 16px;
         min-width: 100%;
         border-radius: 4px;
         border: 1px solid var(--color-social-icon-team);
@@ -46,7 +48,7 @@
         flex-wrap: wrap;
         gap: 30px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     // @media screen and (min-width: 480px) {
     //     &__element {
@@ -56,20 +58,25 @@
 
     @media screen and (max-width: 767px) {
         &__element {
-            width: 210px;    
+            max-width: 210px;  
+            min-width: 180px;  
         }
+        
     }
 
     @media screen and (min-width: 768px) {
         &__element {
             width: 226px;
         }
+        
     }
 
     @media screen and (min-width: 1200px) {
         &__element {
             width: 170px;
         }
+        
+
         &__tageline {
             font-size: 36px;
         }

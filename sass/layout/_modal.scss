@@ -4,7 +4,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 528px;
+    max-width: 450px; //528px;
     min-height: 581px;
 
     background-color: var(--hover-txt-btn);
@@ -24,4 +24,16 @@
         letter-spacing: 0.03em;
         color: var(--tagline-gray-cl);
     }
+}
+@media screen and (min-width: 480px) {
+    .modal {
+        width: 450px;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+    }
+    
 }

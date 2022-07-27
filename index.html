@@ -30,7 +30,7 @@
     <header class="site-top">
       <div class="container site-top__container">
         <nav class="site-top__nav">
-          <a class="link logo" href="./index.html" lang="en"
+          <a class="link logo site-top__logo" href="./index.html" lang="en"
             >Web<span class="logo--top-element">Studio</span>
          </a>
           <ul class="list site-top__list">
@@ -44,7 +44,51 @@
               <a class="link site-top__contacts" href="#">Контакты</a>
             </li>
           </ul>
+           <!-- мобільне меню -->
+        <div class="mobile-menu is-hidden" data-menu>
+					<ul class="mobile-menu-nav list">
+						<li class="mobile-menu-nav-item">
+							<a class="link current" href="./index.html">Студия </a>
+						</li>
+						<li class="mobile-menu-nav-item">
+							<a class="mobile-menu-nav-link link" href="./portfolio.html">Портфолио</a>
+						</li>
+						<li class="mobile-menu-nav-item">
+							<a class="mobile-menu-nav-link link" href="">Контакты</a>
+						</li>
+					</ul>
+
+					<ul class="mobile-menu-contacts list">
+						<li class="mobile-menu-contacts-item">
+							<a class="mobile-menu-tel link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+						</li>
+						<li class="mobile-menu-contacts-item">
+							<a class="mobile-menu-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						</li>
+					</ul>
+
+					<ul class="mobile-menu-socials list">
+						<li class="mobile-menu-socials-item">
+							<a class="mobile-menu-socials-link link" href="#" target="_blank"
+                  rel="noreferrer noopener"> Instagram </a>
+						</li>
+						<li class="mobile-menu-socials-item">
+							<a class="mobile-menu-socials-link link" href="#" target="_blank"
+                  rel="noreferrer noopener">Twitter</a>
+						</li>
+						<li class="mobile-menu-socials-item">
+							<a class="mobile-menu-socials-link link" href="#" target="_blank"
+                  rel="noreferrer noopener">Facebook</a>
+						</li>
+						<li class="mobile-menu-socials-item">
+							<a class="mobile-menu-socials-link link" href="#" target="_blank"
+                  rel="noreferrer noopener">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+
         </nav>
+
         <ul class="list site-top__connection">
           <li class="list__menu site-top__menu">
             <a class="link list__email site-top__email" href="mailto:info@devstudio.com">
@@ -61,7 +105,15 @@
                 </svg>
                 +38 096 111 11 11</a>
           </li>
-        </ul> -->
+        </ul>
+
+        <button class="site-top__btn is-open" type="button" data-menu-button>
+          <svg width="24" height="16">
+            <use class="site-top__burger-menu" href="./images/icons.svg#icon-burger-menu"></use>
+            <use class="site-top__close-burger-menu" href="./images/icons.svg#icon-close-burger-menu"></use>
+          </svg>
+        </button>
+        
       </div>
     </header>
     <main>
@@ -463,16 +515,16 @@
     </footer>
 
     <!-- модальне вікно -->
-    <!-- <div class="backdrop is-hidden" data-modal> -->
-      <!-- <div class="modal">
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
         <button class="close-button modal__close-button" type="button" data-modal-close>
           <svg class="close-button__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
-        </button> -->
+        </button>
         <!-- форма подписки в модалке -->
         
-        <!-- <form class="modal__form form" autocomplete="off">
+        <form class="modal__form form" autocomplete="off">
           <p class="modal__tag form__tag">Оставьте свои данные, мы вам перезвоним</p>
           
           <div class="form__field modal__name">
@@ -551,10 +603,11 @@
 
           <button class="btn__modal-push" type="submit">Отправить</button>
         
-        </form> -->
-      <!-- </div>
-      </div> -->
+        </form>
+      
     </div>
+   
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
