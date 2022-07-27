@@ -57,7 +57,7 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -1290,6 +1290,7 @@ address {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 1100;
   max-width: 450px;
   min-height: 581px;
   background-color: var(--hover-txt-btn);
