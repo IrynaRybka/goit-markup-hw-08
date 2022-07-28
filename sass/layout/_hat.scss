@@ -7,10 +7,44 @@
 
     background-color: var(--bk-cl-darkgray);
     text-align: center;
-    background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/background-team.jpg);
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/background/header-mob.jpg);
+
+// мобільна версія ретіни
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/background/header-mob@2x.jpg);
+  }
+ 
+
+    @media screen and (min-width: 786px) {
+        background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/background/header-tab.jpg);
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/background/header-tab@2x.jpg);
+  }
+    }
+
+    @media screen and (min-width: 1200px) {
+            background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/background/header-des.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+             (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/background/header-des@2x.jpg);
+  }
+        }
+        
   
     &__tagline {
         width: calc((100% - 2*30px)/1);
@@ -21,8 +55,8 @@
         
         color: var(--hover-txt-btn);
         font-weight: 900;
-        font-size: 26px;           // 44px;
-        line-height: 1.62;         //1.36;
+        font-size: 26px;           
+        line-height: 1.62;         
         letter-spacing: 0.06em;
         text-transform: uppercase;
        

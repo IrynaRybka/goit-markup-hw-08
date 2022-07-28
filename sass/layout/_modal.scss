@@ -5,7 +5,7 @@
     transform: translate(-50%, -50%);
     z-index: 1100;
 
-    max-width: 450px; //528px;
+    // max-width: 450px; //528px;
     min-height: 581px;
 
     background-color: var(--hover-txt-btn);
@@ -25,16 +25,22 @@
         letter-spacing: 0.03em;
         color: var(--tagline-gray-cl);
     }
-}
-@media screen and (min-width: 480px) {
-    .modal {
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+        &__form {
+            max-width: 450px;
+        }
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    &__form {
         width: 450px;
     }    
 }
-
-@media screen and (min-width: 1200px) {
-    .modal {
+    @media screen and (min-width: 1200px) {
+    &__form {
         width: 528px;
     }
     
 }
+}
+
+

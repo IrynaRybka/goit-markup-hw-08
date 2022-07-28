@@ -15,6 +15,7 @@
 	background-color: var(--hover-txt-btn);
 
 	transition: transform 500ms;
+	
 
 	&.is-open {
 		transform: translateX(0);
