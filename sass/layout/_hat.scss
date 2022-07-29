@@ -61,6 +61,14 @@
         text-transform: uppercase;
        
     }
+
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        &__tagline {
+        width: 360px;
+        padding-left: 0px;
+        padding-right: 0px;
+        }
+    }
     @media screen and (min-width: 1200px) {
         &__tagline {
             width: 696px;

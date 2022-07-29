@@ -41,6 +41,9 @@
         &__ideas:not(:last-child) {
             margin-bottom: 30px;
             } 
+        &__tagline {
+            text-align: center;
+            }
         }
     @media screen and (min-width: 1200px) {
         &__ideas {

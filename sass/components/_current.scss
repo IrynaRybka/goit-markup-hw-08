@@ -1,6 +1,7 @@
 .current {
     color: var(--base-blue-color);
 
+  @media screen and (min-width: 768px)  {
   &::after {
     position:absolute;
     bottom: -1px;
@@ -12,6 +13,7 @@
     background-color: var(--base-blue-color);
     border-radius: 2px;
   }
+}
 }
 .list__menu .current {
   @include current;
