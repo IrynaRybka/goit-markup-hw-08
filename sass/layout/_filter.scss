@@ -14,7 +14,13 @@
     } 
     @media screen and (min-width: 768px) {
         &__list {
+            margin-bottom: 30px;
             justify-content: center;
+        }
+    }   
+     @media screen and (min-width: 1200px) {
+        &__list {
+            margin-bottom: 50px;
         }
     }   
     }

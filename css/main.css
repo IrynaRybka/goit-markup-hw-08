@@ -865,9 +865,15 @@ address {
 }
 @media screen and (min-width: 768px) {
   .filter__list {
+    margin-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    margin-bottom: 50px;
   }
 }
 
@@ -1097,7 +1103,7 @@ address {
 .site-bottom__element:last-child {
   margin-bottom: 0;
 }
-.site-bottom__nav, .site-bottom__social {
+.site-bottom__social {
   margin-bottom: 60px;
 }
 .site-bottom__adress {
